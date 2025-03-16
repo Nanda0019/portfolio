@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0814273100.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a  href="#">Home</a></li>
+                    <li><a  href="#">About</a></li>
+                    <li><a  href="#">Services</a></li>
+                    <li><a  href="#">portfolio</a></li>
+                    <li><a  href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text"> 
+                <p>UI/UX designer & Web developer</p>
+                <h1>Hi, I'm Nanda<span>kishore</span><br> from Hyderabad</h1>
+            </div>
+        </div>
+    </div>
+
+<!--about section-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/user.JPG">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        Hey there! I'm Nanda kishore,   <br>
+                        currently pursuing B.Tech in  <br>
+                        computer science and information technology at MLRIT,   <br>
+                        I aspire to leverage my skills in web technology to create immersive digital experiences.  <br>   <br>
+                     </p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div> 
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li><span>Web development</span><br>Front end development</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>DEC 2024 - Current</span><br>UI/UX and Web Development Intern at Knowvation Learnings Pvt. Ltd.</li>
+                        </ul>
+                     </div>     
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023–Present</span><br>
+                                Pursuing a Bachelor’s degree in Computer Science and Information Technology (3rd year) at MLRIT, Hyderabad.</li>
+                            <li><span>2020-2023</span><br>Diploma in Electronics and Instrumentation Engineering from GIOE Hyderabad</li>
+                        </ul>
+                     </div>  
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--services-->
+
+<div id="services">
+    <h1 class="sub-title">Technical Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-crop"></i>
+           
+            <h2>UI/UX design</h2>
+            <p>I design clean, user-friendly websites that work perfectly on all devices.  From layouts<br>
+                 to navigation,
+                 I create sites that look great and are easy to use. 
+                Whether you need a<br> personal portfolio or a business website</p>
+                <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2> Frontend Development</h2>
+            <p>
+                I create visually stunning and responsive user interfaces that bring your ideas to life. <br>
+                With a focus on clean code and seamless design,
+                 I ensure your website looks great on all devices. </p>
+                <a href="#">Learn more</a>
+        </div>
+        
+    </div>
+</div>
+
+
+<div id="services">
+    <h1 class="sub-title">Creative Services</h1>
+    <div class="services-list">
+        <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGklEQVR4nO2cXYxdUxTH97TMaFph9AMjSAgJDRoq0Q9pDSJ4qDai8aKePKm3ZkiaVFVN1VM9aCRIIyFRoQ0RiqRhNOKr5QlBGrRItKrjqyn1kzV33dw1275z75x7Z/Y59+xfcjP3rLXPf5+7ss/anxnnEolEIpFIJBKJRCKRSIxAYhTjbhajb0+4FgK4wNgWltXusgYw2SukACrtahgNaVdFdKi9IdUbJQ8Y26Ky2l0LAUyQAtgymVvguG/0AIaAd90k0656owew6KQAFj2AwB55nVrViVVvHgI4lHJgiSF2Cyw60QNIyoEtB3Ao5cASQ+xXuOhEDSDQ1cr9ruzjQGATcGErGqWdCwNdwAHgc+A0V1BiBvAKsxr0BjDVFZCYAbyf0TyWVauUORB4XSW2Asf1+91Z9cqYA79XicuBe/T7MdlncAUiZgD/UImRDgR4XK9/As53BSFmAI+oxEiwgJOAXWr7FJiRVbssOXCfSiw2tl7gC7W/DEzJql+GHLhVJTZ79ouBX9S3weWcmAG8USVkMD0t4Psb+Be40+WY2DORz0KtUP2r1fcncHXWejo2BwrAdcAJbW39zgN4Uqs5CPS5NlL4HFgFeFilDkv+83wnA7vV/5H/queBPASwC3hB5b4BZnn+M4Cv1P9izCWwXAZQAKYDe1XybWl5zgDMBY6qf63rpBzYAoeBi4xen/bIwlOB+m4C/tGe+Y46r3k0YgQQHTT3Gs2rzBTvvkCda0zPPN/YZwJfU9AA2gOHizPY35JpnLGt1FYmre3mQL3bVOdb4Exjl0WJ39rwPJnsmQPYJvsTnm2d2iXvzfV8PZq/0L89xrdsgp+zGGekqfTMz6lrPzDH88/SHlt4NtZzjmVvyCQ82CnA++p+z7Y0syXwu/rXFDaA3mrKte2wVwHOAr5T/7aAf7nOZCRf3hrwt+V5mrG78cLEsR+YbeqZp52DMBB4jrXqGwYuqxP8CSdPARTeAbpNXcu0pcnnNmPfo6/386GZjDcsylcAJxtqu3iS9+bZBQGZIwMfqn+3P5NJuFELsNXVmXO8AJ9tNqqeSUEzAPeaGUh1zvxBYCF2vpYRVltfacFbndZpW93VGeB2M5O5xZUZ4ALgZw3WemO/xOzqrQvct8HMZC51ZQQ43ezQvRRoadUgSWtbGZjJyD3/W7AoBcBU4DUNgGx/Tvf8V3rDk7+Aa7wy03QVW3jTLlh0PMAWc0rhPM/XZ3rbp03v/CNwbqCs9NjCFtepAHP0ldxn5rfH7NJRvZVr/ch31Oe31gWqVR1DSpmH7Gyn0FDpNWUa5nOXV26KnlYQvvQWYnvVJuzwTzSIVkBfOpgVrshQG3JUf/gSbWXdgbKD9XbvzIkG8QmbAv4e1V4K7NRyMjVc7gr82g43Wo7Ssqu03PHQ/rEp12/OGq5qoDmg5X71dwILAbVhyA697gYeBX7QxD9YbYnA9nonGAK6m7Xs9iZ0X/HHmIWByhE2YYk5se/ziPpu0OtdTejKkEW4vgldORkh7HVFg9rrO3IO0Aw3Fpr/hnHQDKqFQ03oHvIObo6le6peD7sOCuAi80MPeD/0aCzd3EHtgOVSr5e1bDSdg/BJLN3cQWUwK+w0yX5QW4ycUNhokv2rWvbBWLq5A5htzrsMjFHuAS0jqy8zY+nmEmCFDmbRIYX0ijP0029ayInQpvlk6+YSKluTMpitx5EsP3KidHMJlZMG6yWZ6xam9KQfS25q5fWaKN3x8B9SvHRVyjlPDgAAAABJRU5ErkJggg==" alt="video-trimming"
+            class="ve-icon"/>
+            <h2>Video Editing</h2>
+            <p>  I specialize in crafting high-quality videos that resonate with audiences. Working with social media influencers, 
+                I have produced storytelling content, promotional videos, and reels that achieved excellent engagement and reach. 
+                From ideation to the final cut, my focus is on delivering visually stunning outputs that align with the client's vision.</p>
+                <a href="#">Learn more</a>
+        </div>
+        <div>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABYElEQVR4nL2VzU7CQBSFWYELWyNLfx6KEF8CBX1GjaAkWnBF3AlvIOw/c5tTGdppbafqSSaZzNw5587cn+l0/hPAEXAHzIEd9WG2z8At0CsjvwTeaI+lcfk8z8g/gAFw3ODmETAE1o7I/iZ6loz8NOBpH4EHoO+ITFwDe3PDoCm5QeT3mttNDE/ppha3Woy+F/d7PfPGDiiYO81vgK7HPhbXp7uYwmN8DiwqApqYjefcIZ9PQJ4vtLXW1SMNS4KV9l7zN6krMHHI+x4vLaAb2VyHCFjhGIZ5csfmKrWAWYhAaeArA/rLAidtBCwVK2vDyflpiMBYy6uKIL/LZhSapom2NgporDF0yF+C0tQptIRyGPmZ51xBoKpVdNUWprLbaj5q0irmP+V8XTi1cdDs7Ccqrdq6yFX3OB/QZb7vNCCO5XlGnhSeT19mJtIGCXBR5knW+2cBn76dsdopBP5P8QVSaSDLNJ7k2gAAAABJRU5ErkJggg==" alt="external-Instagram-social-media-those-icons-fill-those-icons"
+            alt="instagram-new--v1" 
+            class="instagram-icon"/>
+        
+            <h2>Social media Management</h2> 
+            <p>
+                I have successfully managed social media accounts for startups, developing and implementing strategies that enhanced 
+                their brand presence and audience engagement. With a keen eye for trends and analytics, I create and schedule content 
+                that drives growth and builds a loyal community around the brand. </p>
+                <a href="#">Learn more</a>
+        </div>
+    </div>
+</div>
+
+
+
+<!------Portfoliot--------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My work</h1>
+                <div class="work-list">
+                    <div class="work">
+                    <img src="images/work-.png">
+                </div>
+                <div class="work">
+                    <img src="images/work-.png">
+                </div>
+                <div class="work">
+                    <img src="images/work-.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        } 
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        } 
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>     
